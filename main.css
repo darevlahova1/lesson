@@ -1,15 +1,20 @@
 body {
     font-family: 'Raleway', sans-serif;
-    color: #213053;
+    color: #0d4e17;
+    background-color: #c3c1c1;
   }
    
   header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    header img {
+    width: 150px; /* Ширина в пикселях */
+    height: auto;
   }
+
   img {
-    max-width: 100%; /* Никогда не выходит за пределы родителя */
+    max-width: 5%; /* Никогда не выходит за пределы родителя */
     height: auto;
     display: block; /* Убирает лишние отступы у img */
   }
@@ -23,4 +28,22 @@ body {
     cursor: pointer;
     box-shadow: 0 16px 36px rgb(52 213 68 / 22%);
   }
-  </header>
+}
+  .gallery {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .gallery img {
+    width: 23%; /* 4 картинки в строку с небольшими отступами */
+    height: auto; /* Сохраняем пропорции */
+    border-radius: 10px; /* Скругленные углы (опционально) */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Тень для объёма */
+  }
+ 
+  .about {
+    background-color: #dfa89b;  /* Цвет фона */
+    color: white;               /* Цвет текста */
+    padding: 50px;              /* Отступы */
+    text-align: center; 
+  }
